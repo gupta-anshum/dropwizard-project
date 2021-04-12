@@ -1,5 +1,6 @@
 package com.dropwizard;
 
+import com.dropwizard.rest.EmployeeController;
 import com.dropwizard.rest.HelloController;
 import io.dropwizard.Application;
 import io.dropwizard.Configuration;
@@ -22,7 +23,7 @@ public class App extends Application<Configuration> {
     @Override
     public void run(Configuration c, Environment e) throws Exception {
         LOGGER.info("Registering REST resources");
-        //  e.jersey().register(new EmployeeRESTController(e.getValidator()));
+          e.jersey().register(new EmployeeController(e.getValidator()));
         e.jersey().register(new HelloController());
     }
 

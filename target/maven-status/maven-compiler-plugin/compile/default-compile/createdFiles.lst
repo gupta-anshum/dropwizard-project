@@ -1,2 +1,5 @@
-com/dropwizard/rest/HelloController.class
+com/dropwizard/db/EmployeeDB.class
+com/dropwizard/rest/EmployeeController.class
 com/dropwizard/App.class
+com/dropwizard/rest/HelloController.class
+com/dropwizard/bean/Employee.class
